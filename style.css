@@ -194,3 +194,14 @@ footer {
   font-size: 32px;
   margin-bottom: 5px;
 }
+.footer {
+  background: #222;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+}
