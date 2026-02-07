@@ -1,4 +1,4 @@
-.navbar {
+b.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -242,4 +242,8 @@ footer {
 .btn:hover {
   background: #e68a00;
   transform: translateY(-2px);
+}
+.service-card .btn {
+  margin-top: 10px;
+  align-self: center;
 }
