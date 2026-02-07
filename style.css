@@ -148,3 +148,30 @@ footer {
 .service-card h3 {
   color: #0a4c8b;
 }
+.testimonials {
+  background: #f1f6fb;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  color: #0a4c8b;
+  font-style: normal;
+}
