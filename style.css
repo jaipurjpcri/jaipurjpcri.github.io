@@ -330,3 +330,20 @@ border-radius: 8px;
     background: #ff2f2f;
     color: white;
 }
+#why-jpcri {
+    padding: 40px;
+    background: #f8f8f8;
+    margin-top: 40px;
+}
+
+#why-jpcri h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.why-box ul {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
