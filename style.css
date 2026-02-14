@@ -220,7 +220,7 @@ footer {
   margin: auto;
 }
 .btn {
-  display: inline-block;
+  display:block;
   padding: 12px 25px;
   background: #ff9800;
   color: white;
@@ -242,7 +242,7 @@ footer {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
   padding: 12px 25px;
   background: #ff9800;
   color: white;
@@ -370,7 +370,7 @@ border-radius: 8px;
 
 .faq-container {
   display: block;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .faq-item {
@@ -423,7 +423,7 @@ border-radius: 8px;
 <style>
 /* BLOG SECTION STYLING - SAFE SCOPE */
 .blog-post {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
   font-family: "Poppins", Arial, sans-serif;
