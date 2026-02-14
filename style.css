@@ -795,3 +795,19 @@ section {
     margin: 0 auto;
     padding: 0 20px;
 }
+body > div,
+main,
+.wrapper,
+.content,
+.page,
+.site {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
