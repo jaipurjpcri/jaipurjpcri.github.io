@@ -593,3 +593,22 @@ border-radius: 8px;
 }
 
 </style>
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+nav a:hover {
+  color: #1f5f8b;
+}
