@@ -811,3 +811,23 @@ main,
     margin-right: auto !important;
 }
 
+/* ===== FORCE FULL WIDTH PAGE STRUCTURE ===== */
+
+html, body {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+section > .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* remove any shrink behavior */
+section, div, main {
+    max-width: 100%;
+}
