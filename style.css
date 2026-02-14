@@ -349,11 +349,17 @@ border-radius: 8px;
     line-height: 1.8;
 }
 
+
 #faq {
     padding: 40px;
     background: white;
 }
 
+.faq-container {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
 .faq-item {
     max-width: 800px;
     margin: auto;
