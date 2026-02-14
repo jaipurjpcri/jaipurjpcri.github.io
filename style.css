@@ -500,59 +500,96 @@ border-radius: 8px;
 </style>
 <style>
 
-.hero-premium {
-  background: linear-gradient(135deg, #0f4c75, #3282b8);
+<style>
+
+/* ---------- HERO PREMIUM ---------- */
+
+.hero {
+  background: linear-gradient(120deg, #0b3c5d, #1f5f8b);
+  padding: 120px 20px;
   color: white;
-  padding: 100px 20px;
-  text-align: center;
 }
 
-.hero-premium h1 {
-  font-size: 36px;
+.hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 42px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
 }
 
-.hero-premium p {
-  max-width: 700px;
-  margin: 0 auto 30px auto;
+.hero-sub {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.hero-desc {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
+  max-width: 750px;
+  margin-bottom: 40px;
+  opacity: 0.9;
 }
 
-.hero-buttons {
+.hero-cta {
   display: flex;
-  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.btn-primary {
-  background: #ffffff;
-  color: #0f4c75;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-primary:hover {
-  background: #f1f1f1;
-}
-
-.btn-secondary {
-  background: transparent;
-  border: 2px solid #ffffff;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-secondary:hover {
+.btn-main {
   background: white;
-  color: #0f4c75;
+  color: #0b3c5d;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.btn-main:hover {
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #0b3c5d;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 90px 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-sub {
+    font-size: 18px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+  }
 }
 
 </style>
