@@ -32,7 +32,8 @@ b.navbar {
 
 .navbar a:hover {
   color: #0a4c8b;
-}body {
+}
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f8f9fa;
