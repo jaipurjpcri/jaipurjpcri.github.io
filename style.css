@@ -177,23 +177,27 @@ footer {
   font-style: normal;
 }
 .stats {
-  background: #0a4c8b;
+  background: #174c83;
   color: white;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
+  margin-top: 60px;
 }
 
 .stats-grid {
-  max-width: 900px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.stat-box h2 {
+.stats h3 {
   font-size: 32px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 16px;
 }
 .footer {
   background: #222;
