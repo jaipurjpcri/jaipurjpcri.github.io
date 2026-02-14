@@ -380,12 +380,13 @@ border-radius: 8px;
 }
 
 .blog-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+   display: block;
 }
-
+    .blog-cards {
+   display: flex;
+   gap: 30px;
+   flex-wrap: wrap;
+    }
 .blog-card {
     background: white;
     padding: 20px;
@@ -738,6 +739,7 @@ nav a {
   border-radius: 12px;
 }
 
+
 /* SERVICES */
 .services-container {
   max-width: 1100px;
@@ -773,3 +775,7 @@ nav a {
 }
 
 </style>
+section {
+   width: 100%;
+   clear: both;
+}
