@@ -846,3 +846,28 @@ section {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* ===== FINAL WIDTH NORMALIZATION ===== */
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+}
+
+section {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
