@@ -831,3 +831,18 @@ section > .container {
 section, div, main {
     max-width: 100%;
 }
+/* ===== PAGE WIDTH RESET ===== */
+
+.page {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
