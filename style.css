@@ -779,3 +779,10 @@ section {
    width: 100%;
    clear: both;
 }
+/* ===== Global Container Fix ===== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
