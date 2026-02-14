@@ -1,3 +1,12 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+}
 b.navbar {
   display: flex;
   justify-content: space-between;
@@ -53,10 +62,10 @@ header {
   object-fit: cover;
 }
 
-section {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 h2 {
