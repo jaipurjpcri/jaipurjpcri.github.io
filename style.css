@@ -498,3 +498,61 @@ border-radius: 8px;
   margin-top: 10px;
 }
 </style>
+<style>
+
+.hero-premium {
+  background: linear-gradient(135deg, #0f4c75, #3282b8);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-premium h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-premium p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #ffffff;
+  color: #0f4c75;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #f1f1f1;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #0f4c75;
+}
+
+</style>
