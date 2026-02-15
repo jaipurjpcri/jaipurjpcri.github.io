@@ -871,3 +871,105 @@ section {
     padding-left: 20px;
     padding-right: 20px;
 }
+/* Doctor Section */
+.doctor-section {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.doctor-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.doctor-image img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.doctor-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.doctor-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #dc2626;
+}
+
+.doctor-institute {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #374151;
+}
+
+.doctor-qual {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #4b5563;
+}
+
+.doctor-highlights {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 22px;
+  color: #111827;
+  font-size: 15px;
+}
+
+.doctor-highlights li {
+  margin-bottom: 6px;
+}
+
+.doctor-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.btn-primary {
+  background: #dc2626;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #b91c1c;
+}
+
+.btn-secondary {
+  background: #111827;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background: #000;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .doctor-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .doctor-buttons {
+    justify-content: center;
+  }
+}
