@@ -124,7 +124,7 @@ footer {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 .map-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 20px auto;
   border-radius: 10px;
   overflow: hidden;
@@ -374,7 +374,7 @@ border-radius: 8px;
   margin: 0 auto;
 }
 .faq-item {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     margin-bottom: 15px;
 }
