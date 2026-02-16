@@ -200,3 +200,8 @@ header {
   object-fit: contain;
   display: block;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
