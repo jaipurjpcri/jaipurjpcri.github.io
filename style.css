@@ -219,7 +219,7 @@ header {
   display: flex;
   height: 100%;
   width: 400%; /* 4 slides */
-  transition: transform 0.8s ease;
+  transition: transform 0.55s ease in out;
 }
 
 /* each slide */
