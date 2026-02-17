@@ -15,18 +15,18 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector(".slider-track");
-  const slides = document.querySelectorAll(".slide");
+  const slides = document.querySelectorAll(".slider-track .slide");
 
-  if (!track || slides.length === 0) return;
+  if (!track || slides.length < 2) return;
 
   let index = 0;
 
-  function moveSlide() {
+  function move() {
     index = (index + 1) % slides.length;
     track.style.transform = "translateX(-" + index * 100 + "%)";
   }
 
-  setInterval(moveSlide, 3500);
+  setInterval(move, 2800);
 });
 </script>
 <body>
