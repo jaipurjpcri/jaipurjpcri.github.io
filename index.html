@@ -16,17 +16,57 @@
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector(".slider-track");
   const slides = document.querySelectorAll(".slider-track .slide");
+  const dots = document.querySelectorAll(".dot");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
 
   if (!track || slides.length < 2) return;
 
   let index = 0;
 
-  function move() {
-    index = (index + 1) % slides.length;
-    track.style.transform = "translateX(-" + index * 100 + "%)";
+  function showSlide(i) {
+    index = i;
+
+    // move track
+    track.style.transform = `translateX(-${index * 100}%)`;
+
+    // update dots
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+
+    // fade-in text animation
+    slides.forEach(slide => {
+      slide.querySelector('.slide-text').style.opacity = 0;
+      slide.classList.remove('active');
+    });
+    const currentText = slides[index].querySelector('.slide-text');
+    const currentSlide = slides[index];
+    currentSlide.classList.add('active');
+    currentText.style.animation = 'none';
+    void currentText.offsetWidth; // restart animation
+    currentText.style.animation = 'fadeInUp 1s forwards';
   }
 
-  setInterval(move, 2800);
+  function nextSlide() { showSlide((index + 1) % slides.length); }
+  function prevSlide() { showSlide((index - 1 + slides.length) % slides.length); }
+
+  // auto-slide every 2.8 sec
+  let slideInterval = setInterval(nextSlide, 2800);
+
+  // arrows
+  nextBtn.addEventListener("click", () => { nextSlide(); resetInterval(); });
+  prevBtn.addEventListener("click", () => { prevSlide(); resetInterval(); });
+
+  // dots
+  dots.forEach((dot, i) => { dot.addEventListener("click", () => { showSlide(i); resetInterval(); }); });
+
+  function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 2800);
+  }
+
+  // initialize
+  showSlide(index);
 });
 </script>
 <body>
@@ -45,7 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
     </nav>
   </div>
 </header>
-  <section class="hero-slider">
+  <!-- HERO SLIDER START -->
+<section class="hero-slider">
   <div class="slider-track">
 
     <div class="slide">
@@ -53,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="slide-text">
         <h1>Jaipur Physio & Cardio Rehab Institute</h1>
         <p>Advanced Cardiac & Pulmonary Rehabilitation in Raja Park</p>
+        <a href="#contact" class="cta-btn">Book Free Consultation</a>
       </div>
     </div>
 
@@ -61,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="slide-text">
         <h1>Pulmonary Rehabilitation</h1>
         <p>Breathing Therapy & Lung Recovery Programs</p>
+        <a href="#contact" class="cta-btn">Book Free Consultation</a>
       </div>
     </div>
 
@@ -69,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="slide-text">
         <h1>Physiotherapy & Exercise Therapy</h1>
         <p>Pain Relief • Mobility • Functional Recovery</p>
+        <a href="#contact" class="cta-btn">Book Free Consultation</a>
       </div>
     </div>
 
@@ -77,7 +121,25 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="slide-text">
         <h1>Geriatric Rehabilitation</h1>
         <p>Safe Recovery for Elderly Patients</p>
+        <a href="#contact" class="cta-btn">Book Free Consultation</a>
       </div>
+    </div>
+
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Navigation Dots -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+<!-- HERO SLIDER END -->
     </div>
 
   </div>
