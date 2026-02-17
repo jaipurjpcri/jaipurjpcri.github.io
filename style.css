@@ -205,3 +205,95 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
+/* ===== HERO SLIDER ===== */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;              /* fixed height for consistency */
+  min-height: 520px;         /* prevents collapse on small screens */
+  overflow: hidden;
+}
+
+/* Each slide */
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Image */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* prevents distortion */
+  display: block;
+}
+
+/* Dark medical overlay */
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.65) 0%,
+    rgba(0,0,0,0.45) 40%,
+    rgba(0,0,0,0.25) 70%,
+    rgba(0,0,0,0.15) 100%
+  );
+}
+
+/* Text container */
+.slide-text {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  max-width: 520px;
+  z-index: 2;
+}
+
+/* Title */
+.slide-text h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+}
+
+/* Subtitle */
+.slide-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+/* ===== MOBILE STABILITY ===== */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 65vh;
+    min-height: 460px;
+  }
+
+  .slide-text {
+    left: 6%;
+    right: 6%;
+    max-width: none;
+  }
+
+  .slide-text h1 {
+    font-size: 28px;
+  }
+
+  .slide-text p {
+    font-size: 15px;
+  }
+}
