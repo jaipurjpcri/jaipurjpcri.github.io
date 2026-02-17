@@ -11,20 +11,24 @@
 
 <link rel="stylesheet" href="style.css">
 </head>
+
 <script>
-const track = document.querySelector(".slider-track");
-const slides = document.querySelectorAll(".slide");
-let index = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector(".slider-track");
+  const slides = document.querySelectorAll(".slide");
 
-function moveSlide() {
-  index++;
-  if (index >= slides.length) index = 0;
-  track.style.transform = "translateX(-" + index * 100 + "%)";
-}
+  if (!track || slides.length === 0) return;
 
-setInterval(moveSlide, 4000);
+  let index = 0;
+
+  function moveSlide() {
+    index = (index + 1) % slides.length;
+    track.style.transform = "translateX(-" + index * 100 + "%)";
+  }
+
+  setInterval(moveSlide, 3500);
+});
 </script>
-
 <body>
 
 <!-- NAVBAR -->
