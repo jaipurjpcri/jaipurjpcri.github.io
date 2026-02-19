@@ -359,3 +359,94 @@ header {
   .slide-text p { font-size: 13px; }
   .cta-btn { font-size: 12px; padding: 6px 14px; }
 }
+/* ===== BLOG POST PAGE ===== */
+
+.blog-post {
+  max-width: 850px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 35px 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.blog-post h1 {
+  font-size: 30px;
+  color: #0b3c5d; /* matches brand blue */
+  margin-bottom: 10px;
+}
+
+.blog-post .author {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.blog-post h2 {
+  font-size: 22px;
+  color: #174c83; /* section heading blue */
+  margin-top: 30px;
+}
+
+.blog-post p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.blog-post ul {
+  margin: 15px 0 20px 20px;
+}
+
+.blog-post li {
+  margin-bottom: 8px;
+}
+
+.highlight {
+  color: #ff2f2f; /* your CTA red */
+  font-weight: 600;
+}
+
+/* WhatsApp CTA */
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 25px;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.whatsapp-button:hover {
+  background: #1ebe5d;
+  box-shadow: 0 4px 12px rgba(37,211,102,0.35);
+}
+
+/* Blog spacing inside main layout */
+.blog-section {
+  padding: 60px 0;
+  background: #f8fafc;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 25px 20px;
+    margin: 30px 15px;
+  }
+
+  .blog-post h1 {
+    font-size: 24px;
+  }
+
+  .blog-post h2 {
+    font-size: 20px;
+  }
+
+  .blog-post p,
+  .blog-post li {
+    font-size: 15px;
+  }
+}
