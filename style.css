@@ -494,3 +494,16 @@ text-decoration:none;
 text-decoration:underline;
 }
 }
+.blog-faq{
+margin-top:40px;
+padding-top:10px;
+border-top:1px solid #eee;
+}
+
+.blog-faq h2{
+margin-bottom:15px;
+}
+
+.blog-faq .faq-item{
+margin-bottom:20px;
+}
