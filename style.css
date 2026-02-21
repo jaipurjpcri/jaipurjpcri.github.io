@@ -475,5 +475,22 @@ font-size:15px;
 width:100%;
 text-align:center;
 }
+.blog-faq-box{
+background:#f0f7ff;
+border-left:4px solid #0b5ed7;
+padding:14px 16px;
+margin:25px 0;
+border-radius:8px;
+font-size:15px;
+}
 
+.blog-faq-box a{
+color:#0b5ed7;
+font-weight:600;
+text-decoration:none;
+}
+
+.blog-faq-box a:hover{
+text-decoration:underline;
+}
 }
