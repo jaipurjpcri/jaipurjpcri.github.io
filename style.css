@@ -513,3 +513,50 @@ margin-bottom:15px;
 .blog-faq .faq-item{
 margin-bottom:20px;
 }
+
+/* ===== MOBILE HAMBURGER NAVBAR ===== */
+
+.hamburger{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+  user-select:none;
+}
+
+.nav-menu{
+  display:flex;
+  gap:20px;
+}
+
+@media(max-width:768px){
+
+  .nav-menu{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:#fff;
+    flex-direction:column;
+    width:220px;
+    padding:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    transform:translateX(100%);
+    transition:transform .3s ease;
+  }
+
+  .nav-menu.active{
+    transform:translateX(0);
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+  .navbar nav a{
+    margin:10px 0;
+  }
+
+  .nav-flex{
+    flex-direction:row;
+    justify-content:space-between;
+  }
+}
