@@ -195,18 +195,24 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
   <div class="container nav-flex">
+
     <div class="logo">
       <img src="assets/img/clinic (1).png" alt="JPCRI Logo">
     </div>
-    <nav>
+
+    <nav class="nav-menu" id="navMenu">
       <a href="#">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
   </div>
 </header>
   <!-- HERO SLIDER START -->
@@ -598,6 +604,13 @@ document.addEventListener("DOMContentLoaded", function () {
 <footer>
   <p>© 2025 JPCRI. All rights reserved.</p>
 </footer>
+<script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
 
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+</script>
 </body>
 </html>
