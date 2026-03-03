@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment | JPCRI Jaipur</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f2f6f9;
+    color: #2c3e50;
+}
+
+.header {
+    background: #0b3c5d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0b3c5d;
+    border-bottom: 2px solid #e1e8ed;
+    padding-bottom: 5px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 18px 0;
+    border-radius: 6px;
+    border: 1px solid #ccd6dd;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row div {
+    flex: 1;
+}
+
+button {
+    background-color: #0b3c5d;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #092f47;
+}
+
+.note {
+    background: #eef5fa;
+    padding: 15px;
+    border-left: 4px solid #0b3c5d;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Jaipur Physio & Cardio Rehab Institute (JPCRI)</h1>
+    <p>253/4, Gagandeep Apartment, Gali No. 4, Raja Park, Jaipur</p>
+</div>
+
+<div class="container">
+
+    <div class="section-title">Cardiac & Lifestyle Disease Rehab Assessment Booking</div>
+
+    <div class="note">
+        This structured assessment includes: BP & Vitals Monitoring, Cardiac Risk Evaluation,
+        Pulmonary Function Screening, Functional Capacity Testing and Personalized Rehab Planning.
+    </div>
+
+    <form action="mailto:jaipurjpcri@gmail.com" method="post" enctype="text/plain">
+
+        <div class="section-title">Patient Information</div>
+
+        <div class="row">
+            <div>
+                <label>Full Name *</label>
+                <input type="text" name="Full Name" required>
+            </div>
+            <div>
+                <label>Age *</label>
+                <input type="number" name="Age" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label>Gender *</label>
+                <select name="Gender" required>
+                    <option value="">Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div>
+                <label>Phone Number *</label>
+                <input type="tel" name="Phone Number" required>
+            </div>
+        </div>
+
+        <label>Email</label>
+        <input type="email" name="Email">
+
+        <label>City</label>
+        <input type="text" name="City">
+
+        <div class="section-title">Medical Details</div>
+
+        <label>Primary Concern *</label>
+        <select name="Primary Concern" required>
+            <option value="">Select Condition</option>
+            <option>High Blood Pressure (Hypertension)</option>
+            <option>Type 2 Diabetes</option>
+            <option>Heart Disease (CAD / Post Angioplasty / CABG)</option>
+            <option>Asthma / COPD</option>
+            <option>Post Cardiac Surgery Rehab</option>
+            <option>Back Pain / Musculoskeletal Issue</option>
+            <option>Other</option>
+        </select>
+
+        <div class="row">
+            <div>
+                <label>Current BP (if known)</label>
+                <input type="text" name="Current BP">
+            </div>
+            <div>
+                <label>Blood Sugar (if known)</label>
+                <input type="text" name="Blood Sugar">
+            </div>
+        </div>
+
+        <label>Are you on Medication?</label>
+        <select name="On Medication">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Occasionally</option>
+        </select>
+
+        <label>Recent Cardiac / Medical History</label>
+        <textarea name="Medical History" rows="4"></textarea>
+
+        <div class="section-title">Appointment Preferences</div>
+
+        <div class="row">
+            <div>
+                <label>Preferred Date *</label>
+                <input type="date" name="Preferred Date" required>
+            </div>
+            <div>
+                <label>Preferred Time *</label>
+                <input type="time" name="Preferred Time" required>
+            </div>
+        </div>
+
+        <label>Consultation Type *</label>
+        <select name="Consultation Type" required>
+            <option value="">Select</option>
+            <option>Clinic Visit (Raja Park)</option>
+            <option>Home Visit</option>
+            <option>Online Consultation</option>
+        </select>
+
+        <label>Additional Message</label>
+        <textarea name="Additional Message" rows="3"></textarea>
+
+        <button type="submit">Submit Appointment Request</button>
+
+    </form>
+
+    <div class="footer-note">
+        Our clinical team will contact you within 2 working hours to confirm your appointment.
+        Please keep recent medical reports available during consultation.
+    </div>
+
+</div>
+
+</body>
+</html>
