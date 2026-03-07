@@ -919,5 +919,21 @@ Call Now
 </a>
 
 </div>  
+  <script>
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.onclick = () => {
+navMenu.classList.toggle("active");
+};
+
+document.querySelectorAll(".nav-menu a").forEach(link => {
+link.onclick = () => {
+navMenu.classList.remove("active");
+};
+});
+
+  </script>
 </body>
 </html>
