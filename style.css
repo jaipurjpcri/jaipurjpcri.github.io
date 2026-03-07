@@ -197,22 +197,7 @@ font-size:16px;
 margin-bottom:12px;
 }
 
-/* CTA BUTTON */
 
-.cta-btn{
-display:inline-block;
-padding:10px 22px;
-background:#ff4d4d;
-color:#fff;
-text-decoration:none;
-font-weight:600;
-border-radius:6px;
-transition:.3s;
-}
-
-.cta-btn:hover{
-background:#e03e3e;
-}
 
 /* ARROWS */
 
@@ -514,75 +499,3 @@ right:0;
 opacity:1;
 }
 
-
-.slider-logo{
-width:90px;
-margin-bottom:12px;
-}
-
-
-
-.brand-text h1{
-font-size:26px;
-}
-
-.brand-line{
-font-size:15px;
-}
-
-.brand-hindi{
-font-size:14px;
-}
-.hero-slider{
-height:90vh;
-overflow:hidden;
-}
-
-.brand-slide img{
-width:60%;
-max-width:260px;
-display:block;
-margin:0 auto;
-}
-
-.brand-text{
-text-align:center;
-padding:20px;
-}
-
-.brand-text h1{
-font-size:26px;
-margin-top:10px;
-}
-
-.brand-line{
-font-size:16px;
-color:#444;
-}
-
-.brand-hindi{
-font-size:15px;
-opacity:.9;
-}
-
-.brand-slide img{
-object-fit:contain;
-}
-.brand-slide img{
-width:auto;
-height:auto;
-max-width:260px;
-max-height:260px;
-object-fit:contain;
-margin:auto;
-}
-
-.brand-slide{
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-}
-.brand-slide::after{
-display:none;
-}
