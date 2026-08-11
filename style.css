@@ -839,3 +839,60 @@ footer{
 .slide-text{ opacity:1; }
 .slide.active .slide-text{ animation: fadeInUp .9s ease forwards; }
 
+/* ===== Also Available At Section ===== */
+.also-available-box {
+  margin-top: 28px;
+  background: #eef6ff;
+  border-left: 5px solid #1a73e8;
+  border-radius: 10px;
+  padding: 20px 24px;
+  max-width: 600px;
+}
+
+.also-available-title {
+  font-size: 18px;
+  color: #1a73e8;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.also-available-name {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.also-available-name a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.also-available-name a:hover {
+  text-decoration: underline;
+}
+
+.also-available-address {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  margin: 0 0 14px 0;
+}
+
+.also-available-btn {
+  display: inline-block;
+  background: #1a73e8;
+  color: #ffffff !important;
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.also-available-btn:hover {
+  background: #1558b0;
+}
+
+/* ===== End Also Available At Section ===== */
+
