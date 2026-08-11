@@ -980,6 +980,49 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
   });
 });
 </script>
+<!-- Animated Counter Script -->
+<script>
+  // Counter animation function
+  function animateCounter(el) {
+    const target = parseInt(el.getAttribute('data-target'));
+    const suffix = el.getAttribute('data-suffix') || '';
+    const duration = 1500; // 1.5 seconds
+    const stepTime = 20;
+    const steps = duration / stepTime;
+    const increment = target / steps;
+    let current = 0;
 
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      el.textContent = Math.floor(current) + suffix;
+    }, stepTime);
+  }
+
+  // Intersection Observer — runs when stats scroll into view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const card = entry.target;
+        card.classList.add('animate'); // fade + slide up
+
+        const counter = card.querySelector('.stat-number[data-target]');
+        if (counter) {
+          animateCounter(counter); // start counting
+        }
+
+        observer.unobserve(card); // only animate once
+      }
+    });
+  }, { threshold: 0.3 });
+
+  // Attach observer to all stat cards
+  document.querySelectorAll('.stat-card').forEach(card => {
+    observer.observe(card);
+  });
+</script>
 </body>
 </html>
